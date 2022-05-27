@@ -651,7 +651,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
     position: relative;
 }
-/*Modal window*/
+/*Modal window************************************/
 .backdrop {
     position: fixed;
     top: 0;
@@ -668,13 +668,14 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 0;
     pointer-events: none;
 }
+
 .modal {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
 
-    min-height: 581px;
     min-width: 528px;
 
     background-color: var(--three-color-text);
@@ -684,12 +685,8 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     animation-name: animatemodal;
     animation-duration: 3000ms;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    animation-delay: 250ms;
-    animation-iteration-count: 3;
-
-   
-
-    
+    animation-delay: 1000ms;
+    animation-iteration-count: 1;
 
 }
 .modal-btn {
@@ -756,4 +753,36 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     100% {
         transform: rotate(0) ;
     }
+}
+/*Modal form*****************************/
+
+.modal-header {
+    display: block;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+}
+
+.form-group,
+.comment-group,
+.form-policy-group {
+display: block;
+
+}
+
+.form-group {
+margin-bottom: 10px;
+
+}
+
+.comment-group {
+    margin-bottom: 20px;
+    }
+
+.form-policy-group {
+    margin-bottom: 30px;
 }
