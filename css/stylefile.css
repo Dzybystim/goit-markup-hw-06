@@ -12,6 +12,7 @@
     --three-bg: rgba(255, 255, 255, 0.1);
     --four-bg: rgba(47, 48, 58, 0.8);
     --five-bg: rgba(33, 150, 243, 0.9);
+    --six-bg: #0b7ad1;
     /*border color*/
     --first-bord: #EEEEEE;
     /*icon color*/
@@ -51,11 +52,13 @@ h1,h2,h3,h4,h5,h6,p {
     border-radius: 4px;
     cursor: pointer;
     padding: 10px 32px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus {
     cursor: pointer;
-    background-color:  var(--accent-color-text);
+    background-color:  var(--six-bg);
 
     animation-name: animatebutton;
     animation-duration: 2000ms;
@@ -541,8 +544,13 @@ margin-top: 20px;
     outline: transparent;
 
     color: var(--three-color-text);
-}
 
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail-subscribe:hover,
+.mail-subscribe:focus {
+border: 1px solid var(--three-color-text);
+}
 .mail-subscribe::placeholder {
 font-size: 16px;
 line-height: 1.25;
@@ -574,6 +582,12 @@ color: rgba(255, 255, 255, 0.6);
     padding-bottom: 10px;
     color: var(--three-color-text);
     background-color: var(--accent-color-text);
+
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+    background-color: var(--six-bg);
 }
 
 .subscribe-text {
@@ -769,6 +783,12 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     padding: 0;
 }
+
+
+.close-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .modal-btn:focus .close-icon,
 .modal-btn:hover .close-icon {
     fill: var(--accent-color-text);
@@ -847,10 +867,12 @@ margin-bottom: 10px;
 
 }
 
-.form-input:focus {
+.form-input:focus,
+.form-input:hover {
     border: 1px solid var(--accent-color-text);
 }
-.form-input:focus + .input-icon {
+.form-input:focus + .input-icon,
+.form-input:hover + .input-icon{
     fill: var(--accent-color-text);
 }
 
@@ -884,12 +906,15 @@ color: var(--second-color-text);
     border: 1px solid rgba(33, 33, 33, 0.2);
 
     outline: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-icon {
     position: absolute;
     bottom: 12px;
     left: 12px;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .custom-checkbox {
     width: 16px;
@@ -903,12 +928,17 @@ color: var(--second-color-text);
     outline-offset: -2px;
     border-radius: 2px;
 
-    transition: background-color 300ms ease-in,
-    outline 300ms ease-in;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox:checked + .custom-checkbox {
 background-color: var(--accent-color-text);
 outline: transparent;
+}
+
+.custom-checkbox:hover,
+.custom-checkbox:focus {
+outline: 2px solid var(--accent-color-text) ;
 }
 
 .custom-checkbox-icon {
@@ -947,8 +977,16 @@ color: var(--second-color-text);
     border: 1px solid rgba(33, 33, 33, 0.2);
 
     outline: transparent;
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
+
+.comment-area:focus,
+.comment-area:hover {
+border: 1px solid var(--accent-color-text);
+}
+
 .comment-area::placeholder {
     font-family: 'Roboto';
     font-size: 12px;
@@ -983,6 +1021,11 @@ color: var(--second-color-text);
     padding: 10px;
     color: var(--three-color-text);
     background-color: var(--accent-color-text);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.submit-btn:hover,
+.submit-btn:focus {
+ background-color: var(--six-bg);
 }
 
 .submit-group {

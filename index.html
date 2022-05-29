@@ -429,7 +429,7 @@
           <!--Name input-->
           <label class="form-group">
             <span class="form-label">Имя</span>
-            <input class="form-input" type="text" name="user-name">
+            <input class="form-input" type="text" name="user-name" required>
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons/icons.svg#icon-name"></use>
             </svg>
@@ -437,7 +437,7 @@
           <!--Phone input-->
           <label class="form-group">
             <span class="form-label">Телефон</span>
-            <input class="form-input" type="phone" name="user-phone">
+            <input class="form-input" type="phone" name="user-phone" required>
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons/icons.svg#icon-phone"></use>
             </svg>
@@ -445,7 +445,7 @@
           <!--Email input-->
           <label class="form-group">
             <span class="form-label">Почта</span>
-            <input class="form-input" type="mail" name="user-email">
+            <input class="form-input" type="mail" name="user-email" required>
             <svg class="input-icon" width="18" height="18">
               <use href="./images/icons/icons.svg#icon-email"></use>
             </svg>
@@ -453,11 +453,11 @@
           <!--Comment -->
           <label class="comment-group">
             <span class="form-label">Комментарий</span>
-            <textarea class="comment-area" rows="8" placeholder="Введите текст"></textarea>
+            <textarea class="comment-area" rows="8" placeholder="Введите текст" required></textarea>
           </label>
           <!--Checkbox-->
           <label class="form-policy-group">
-            <input class="checkbox visually-hidden" type="checkbox">
+            <input class="checkbox visually-hidden" type="checkbox" name="checkbox" required>
             <span class="custom-checkbox" >
               <svg class="custom-checkbox-icon" width="11" height="8">
                 <use href="./images/icons/icons.svg#icon-check"></use>
